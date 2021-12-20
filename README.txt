@@ -5,4 +5,5 @@
 5. Edit "student" on line 2 on database.js with your pgadmin4 password.
 6. Run the DDL statements in /SQL/DDL.sql to create tables in your database.
 7. Run the DML statements in /SQL/DML.sql to add data to the tables.
-8. Go to http://localhost:5000/ to begin using the site.
+8. Run "npm start" in the terminal
+9. Go to http://localhost:5000/ to begin using the site.
