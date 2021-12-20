@@ -1,0 +1,44 @@
+<section id="add" class="container">
+    <div class="form-wrap">
+      <h1>Add a Book</h1>
+      <p>Kindly enter the details below to add a book</p>
+      {{#each errors}}
+        <div class="error">
+          <p>{{text}}</p>
+        </div>
+      {{/each}}
+      <form action="/books/add" method="POST">
+        <div class="input-group">
+          <label for="title">ISBN</label>
+          <input type="text" name="title" id="title" class="input-box" placeholder="Kindly enter the ISBN here..."
+            maxlength="150" value={{isbn}}>
+        </div>
+        <div class="input-group">
+          <label for="technologies">Book Name</label>
+          <input type="text" name="technologies" id="technologies" class="input-box" placeholder="Kindly enter the book name here..."
+          maxlength="150" value={{name}}>
+        </div>
+        <div class="input-group">
+          <label for="budget">Book Genre</label>
+          <input type="number" name="budget" id="budget" class="input-box" placeholder="Kindly enter the book genre here..." 
+          maxlength="150" value={{genre}}>
+        </div>
+        <div class="input-group">
+          <label for="budget">Publisher ID</label>
+          <input type="number" name="budget" id="budget" class="input-box" placeholder="Kindly enter the Publisher ID..." 
+          maxlength="150" value={{publisher_id}}>
+        </div>
+        <div class="input-group">
+          <label for="budget">Price</label>
+          <input type="number" name="budget" id="budget" class="input-box" placeholder="Kindly enter the price..." 
+          maxlength="150" value={{price}}>
+        </div>
+        <div class="input-group">
+          <label for="budget">Number of Pages</label>
+          <input type="number" name="budget" id="budget" class="input-box" placeholder="Kindly enter the number of pages..." 
+          maxlength="150" value={{number_of_pages}}>
+        </div>
+        <input type="submit" value="Add Book" class="btn btn-reverse">
+      </form>
+    </div>
+  </section>
